@@ -20,4 +20,4 @@ RUN npm run build
 
 ENTRYPOINT npm run serve
 
-EXPOSE 3000
+EXPOSE 3002
