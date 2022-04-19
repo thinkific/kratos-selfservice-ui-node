@@ -1,14 +1,14 @@
 serve:
   public:
-    base_url: http://127.0.0.1:3000/.ory/kratos/public/
+    base_url: http://127.0.0.1:3002/.ory/kratos/public/
   admin:
     base_url: http://kratos:4434/
 
 selfservice:
-  default_browser_return_url: http://127.0.0.1:3000/
+  default_browser_return_url: http://127.0.0.1:3002/
   whitelisted_return_urls:
-    - http://127.0.0.1:3000/
-    - http://127.0.0.1:3000/auth/hydra/login
+    - http://127.0.0.1:3002/
+    - http://127.0.0.1:3002/auth/hydra/login
 
   methods:
     password:
@@ -16,25 +16,25 @@ selfservice:
 
   flows:
     settings:
-      ui_url: http://127.0.0.1:3000/settings
+      ui_url: http://127.0.0.1:3002/settings
 
     verification:
-      ui_url: http://127.0.0.1:3000/verification
+      ui_url: http://127.0.0.1:3002/verification
       enabled: false
 
     recovery:
-      ui_url: http://127.0.0.1:3000/recovery
+      ui_url: http://127.0.0.1:3002/recovery
       enabled: false
 
     logout:
       after:
-        default_browser_return_url: http://127.0.0.1:3000/auth/login
+        default_browser_return_url: http://127.0.0.1:3002/auth/login
 
     login:
-      ui_url: http://127.0.0.1:3000/auth/login
+      ui_url: http://127.0.0.1:3002/auth/login
 
     registration:
-      ui_url: http://127.0.0.1:3000/auth/registration
+      ui_url: http://127.0.0.1:3002/auth/registration
       after:
         password:
           hooks:
